@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramienta de Etiquetado de Imágenes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.0/fabric.min.js"></script>
+</head>
+<body class="bg-light">
+    <div class="container mt-4">
+        <h1 class="text-center">Herramienta de Etiquetado de Imágenes</h1>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="imageUpload">Subir Imagen</label>
+                    <input type="file" id="imageUpload" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="newLabel">Nueva Categoría</label>
+                    <input type="text" id="newLabel" class="form-control" placeholder="Introduce el nombre de la categoría">
+                </div>
+                <div class="form-group">
+                    <label for="labelColor">Color de la Categoría</label>
+                    <input type="color" id="labelColor" class="form-control">
+                </div>
+                <button id="addLabel" class="btn btn-primary btn-block">Agregar Categoría</button>
+                <div class="form-group mt-3">
+                    <label for="labelSelector">Seleccionar Categoría</label>
+                    <select id="labelSelector" class="form-control"></select>
+                    <button id="deleteCategory" class="btn btn-danger btn-block mt-2">Eliminar Categoría Seleccionada</button>
+                </div>
+                <button id="deleteBox" class="btn btn-danger btn-block">Eliminar Caja Seleccionada</button>
+                <button id="clearCanvas" class="btn btn-warning btn-block">Eliminar Todas las Cajas</button>
+                <div class="form-group mt-3">
+                    <label for="formatSelector">Formato para Guardar</label>
+                    <select id="formatSelector" class="form-control">
+                        <option value="yolo">YOLO</option>
+                        <option value="coco">COCO</option>
+                        <option value="pascal">Pascal VOC</option>
+                    </select>
+                </div>
+                <button id="saveLabels" class="btn btn-success btn-block">Guardar Etiquetas</button>
+            </div>
+            <div class="col-md-8">
+                <div class="canvas-container border">
+                    <canvas id="canvas" width="800" height="600"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

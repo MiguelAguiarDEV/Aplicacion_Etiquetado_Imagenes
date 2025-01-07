@@ -1,0 +1,48 @@
+{
+    "images": [
+        {
+            "id": 1,
+            "file_name": "Scan_20250105.png",
+            "width": 800,
+            "height": 600
+        }
+    ],
+    "annotations": [
+        {
+            "id": 1,
+            "image_id": 1,
+            "category_id": 1,
+            "bbox": [
+                118,
+                36,
+                100,
+                100
+            ],
+            "area": 10000,
+            "iscrowd": 0
+        },
+        {
+            "id": 2,
+            "image_id": 1,
+            "category_id": 2,
+            "bbox": [
+                148.5,
+                335.5,
+                100,
+                100
+            ],
+            "area": 10000,
+            "iscrowd": 0
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "aaaaaaa"
+        },
+        {
+            "id": 2,
+            "name": "bbbbbbbb"
+        }
+    ]
+}
