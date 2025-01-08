@@ -96,7 +96,8 @@ document.getElementById('deleteBox').addEventListener('click', () => {
 
 // Limpiar todas las cajas
 document.getElementById('clearCanvas').addEventListener('click', () => {
-    canvas.clear();
+    
+    canvas.remove(...canvas.getObjects());
     alert('¡Todas las cajas han sido eliminadas!');
 });
 
